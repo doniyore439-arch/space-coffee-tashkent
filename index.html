@@ -30,7 +30,8 @@
             <a href="#contact">Контакты</a>
         </nav>
 
-        <a class="nav-button" href="tel:+998990995535">
+        <!-- Кнопка прокручивает к контактам -->
+        <a class="nav-button" href="#contact">
             ПОЗВОНИТЬ
         </a>
 
@@ -244,6 +245,7 @@
 
             </div>
 
+
             <div class="gallery-item">
 
                 <img
@@ -252,6 +254,7 @@
                 >
 
             </div>
+
 
             <div class="gallery-item">
 
@@ -262,6 +265,7 @@
 
             </div>
 
+
             <div class="gallery-item">
 
                 <img
@@ -270,6 +274,7 @@
                 >
 
             </div>
+
 
             <div class="gallery-item gallery-wide">
 
@@ -310,10 +315,10 @@
             </p>
 
             <a
-                href="tel:+998990995535"
+                href="#contact"
                 class="button primary"
             >
-                +998 99 099 55 35
+                ХОЧУ КОФЕ ☕
             </a>
 
         </div>
@@ -339,6 +344,9 @@
 
         <div class="contact-grid">
 
+
+            <!-- ADDRESS -->
+
             <div class="contact-item">
 
                 <span>
@@ -352,6 +360,8 @@
 
             </div>
 
+
+            <!-- PHONE -->
 
             <div class="contact-item">
 
@@ -368,6 +378,8 @@
             </div>
 
 
+            <!-- HOURS -->
+
             <div class="contact-item">
 
                 <span>
@@ -383,6 +395,47 @@
 
         </div>
 
+
+        <!-- CREATIVE CALL BOX -->
+
+        <div class="call-box">
+
+            <div class="call-info">
+
+                <span>
+                    ЕСТЬ ВОПРОС?
+                </span>
+
+                <h3>
+                    Загляните на кофе ☕
+                </h3>
+
+                <a
+                    href="tel:+998990995535"
+                    class="phone-number"
+                >
+                    +998 99 099 55 35
+                </a>
+
+            </div>
+
+
+            <a
+                href="tel:+998990995535"
+                class="call-button"
+            >
+                СВЯЗАТЬСЯ
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <!-- MAP -->
 
         <a
             class="map-button"
@@ -416,24 +469,25 @@
 </footer>
 
 
-<!-- FLOATING CALL BUTTON -->
+<!-- FLOATING BUTTON -->
 
 <a
-    href="tel:+998990995535"
+    href="#contact"
     class="floating-call"
-    aria-label="Позвонить"
+    aria-label="Перейти к телефону"
 >
     ☎
 </a>
 
 
-<!-- ANIMATION SCRIPT -->
+<!-- SCROLL ANIMATION -->
 
 <script>
 
     const elements = document.querySelectorAll(".reveal");
 
     const observer = new IntersectionObserver(
+
         (entries) => {
 
             entries.forEach((entry) => {
@@ -449,9 +503,11 @@
             });
 
         },
+
         {
             threshold: 0.15
         }
+
     );
 
 
@@ -462,6 +518,7 @@
     });
 
 </script>
+
 
 </body>
 
